@@ -1,5 +1,7 @@
-@use "/src/sass/fontello.css";
-@use "/src/sass/modern-normalize.min.css";
+@use "/src/sass/libs/fontello.css";
+@use "/src/sass/libs/modern-normalize.min.css";
+
+@use "/src/sass/base/variables.scss" as *;
 
 
 h1,
@@ -54,6 +56,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
 span {
     font-size: 32px;
+    color: $Ceramic;
 }
