@@ -93,6 +93,29 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .touch {
+        &__img-wrapper {
+            position: relative;
+        }
+
+        &__img-decor {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: -85px;
+        }
+
+        &__input {
+            width: 300px;
+        }
+
+        &__textarea {
+            width: 300px;
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .touch {
         &__img {
