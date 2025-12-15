@@ -1,7 +1,36 @@
+@use "/src/sass/base/variables.scss" as *;
+
 .works {
     margin-top: 60px;
 
     &__slider {
         margin-top: 40px;
+        padding-bottom: 45px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
+    .swiper-pagination {
+        bottom: 0px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: $Dark;
+        width: 10px;
+        height: 10px;
+        border-radius: 0%;
+        opacity: 1;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $Ceramic;
     }
 }
