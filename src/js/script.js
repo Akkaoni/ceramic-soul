@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import "/src/sass/style.scss";
 
 try {
-    new Swiper('.works__slider', {
+    new Swiper(".works__slider", {
         slidesPerView: 1,
         loop: true,
         pagination: {
@@ -15,8 +15,8 @@ try {
             clickable: true,
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".icon-right-open",
+            prevEl: ".icon-left-open",
         },
         breakpoints: {
             // when window width is >= 1200px
@@ -26,6 +26,7 @@ try {
             },
             1920: {
                 spaceBetween: 35,
+                slidesPerView: 3,
             }
         },
         modules: [Navigation, Pagination],
