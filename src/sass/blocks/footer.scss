@@ -5,7 +5,6 @@
     padding: 50px 0;
     background-color: $Dark;
     color: $Light;
-    display: flex;
 
     &__input-checkbox {
         margin-top: 40px;
@@ -118,5 +117,36 @@
         font-size: 14px;
         text-align: center;
         margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer{
+       &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        justify-content: space-between;
+       }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (min-width: 1968px) {
+    .footer {
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+            justify-content: space-between;
+        }
     }
 }
