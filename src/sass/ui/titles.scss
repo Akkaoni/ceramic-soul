@@ -1,4 +1,5 @@
 @use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
 
 .title-h1-italic {
     @include title;
@@ -14,6 +15,15 @@
 .title-h3 {
     @include title;
     font-size: 20px;
+}
+
+.title-h4 {
+    @include title;
+    color: $Light;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 @media screen and (min-width: 768px) {
